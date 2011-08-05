@@ -1,0 +1,82 @@
+#playlist .ui-btn-inner {
+	padding-right: 15%;
+}
+#playlist .music .ui-btn-inner {
+	padding-right: 15px;
+}
+#playlist .music .ui-li-aside {
+	width: 20%;
+}
+.playing {
+	border:1px solid #145072;
+	background:#2567ab;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	text-shadow:0 -1px 1px #145072;
+	text-decoration:none;
+	background-image:-moz-linear-gradient(top, #4e89c5, #2567ab);
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #5f9cc5), color-stop(1, #396b9e));
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#4e89c5', EndColorStr='#2567ab')"
+}
+.playing a {
+	color: #FFFFFF !important;
+}
+span.coverMega {
+	height: 184px;
+	width: 194px;
+}
+span.albumCover {
+	display: block;
+	position: relative;
+}
+span.coverMega img.art {
+	clip: rect(0pt, 174px, 174px, 0pt);
+	left: 15px;
+	top: 5px;
+}
+span.albumCover img.art {
+	display: block;
+	position: absolute;
+}
+span.coverMega span.jewelcase {
+	background-image: url("../images/jewelcase_mega.png");
+	height: 184px;
+	left: 0;
+	width: 194px;
+}
+span.albumCover span.jewelcase {
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+#playlist .folder {
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 82px;
+	background-image: url('../images/jewelcase_empty.png1');
+}
+.title h1 {
+	font-size: 1.714em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+.title h2 {
+	font-size: 1.286em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+.content {
+	float:right;
+	width: 100%;
+}
+#infopanel .title, #infopanel .review {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+#infopanel {
+	display:none;
+}

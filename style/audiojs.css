@@ -1,0 +1,173 @@
+#control {
+	margin-bottom: 20px;
+}
+.volset {
+	background-color: #FFFFFF;
+	border-radius: 15px 15px 15px 15px;
+	float: right;
+	height: 25px;
+	line-height: 45px;
+	margin-right: 5px;
+	margin-top: 15px;
+	width: 170px;
+}
+.audiojsZ .volset p {
+	height: 20px;
+	width: 20px;
+}
+.volset .volup, .volset .voldn {
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	padding: 2px 5px;
+}
+.audiojsZ audio {
+	left: -1px;
+	position: absolute;
+}
+.audiojsZ {
+	font-size: 12px;
+	overflow: hidden;
+}
+.audiojsZ .play-pauseZ, .audiojsZ .prev, .audiojsZ .next {
+	background-color: #FFFFFF;
+	border-radius: 40px 40px 40px 40px;
+	float: left;
+	margin: 10px 5px 4px;
+	overflow: hidden;
+}
+.audiojsZ .play-pauseZ, .audiojsZ .prev, .audiojsZ .next, .audiojsZ .volset {
+	box-shadow: 0 0 3px 2px #C2C2C2;
+	-webkit-box-shadow: 0px 0px 3px 2px #C2C2C2;
+	-moz-box-shadow: 0px 0px 3px 2px #C2C2C2;
+}
+.audiojsZ .play-pauseZ {
+	border-radius: 53px 53px 53px 53px;
+	height: 53px;
+	margin-top: 3px;
+	width: 53px;
+}
+.audiojsZ p {
+	cursor: pointer;
+	display: none;
+	height: 40px;
+	margin: 0;
+	width: 40px;
+}
+.audiojsZ .playZ {
+	display: block;
+}
+.audiojsZ .scrubberZ {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	height: 13px;
+	line-height: 45px;
+	margin: 23px 10px 10px;
+	overflow: hidden;
+	position: relative;
+	width: 207px;
+}
+.audiojsZ .progressZ, .audiojsZ .loadedZ {
+	height: 13px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+.audiojsZ .progressZ, .volset .bar {
+	background: rgb(109,179,242); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(109,179,242,1)), color-stop(50%, rgba(84,163,238,1)), color-stop(51%, rgba(54,144,240,1)), color-stop(100%, rgba(30,105,222,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* W3C */
+	border-radius: 10px 10px 10px 10px;
+	z-index: 1;
+}
+.audiojsZ .loadedZ, .volset .vbar {
+	background: none repeat scroll 0 0 #E1E1E1;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: -1px -1px 2px 1px #C2C2C2 inset;
+	-webkit-box-shadow: -1px -1px 2px 1px #C2C2C2 inset;
+	-moz-box-shadow: -1px -1px 2px 1px #C2C2C2 inset;
+}
+.volset .vbar {
+	float: left;
+	height: 11px;
+	margin: 7px;
+	overflow: hidden;
+	position: relative;
+	width: 80px;
+}
+.volset .bar {
+	height: 11px;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.audiojsZ .timeZ {
+	float: left;
+	height: 36px;
+	line-height: 57px;
+	margin: 0 0 0 6px;
+}
+.audiojsZ .timeZ em {
+	font-style: normal;
+	padding: 0 2px 0 0;
+}
+.audiojsZ .timeZ strong {
+	font-weight: normal;
+	padding: 0 0 0 2px;
+}
+.audiojsZ .error-messageZ {
+	display: none;
+	float: left;
+	height: 36px;
+	line-height: 57px;
+	margin: 0 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 207px;
+}
+.audiojsZ .error-messageZ a {
+	border-bottom: 1px solid #999999;
+	color: #EEEEEE;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+.audiojsZ .playZ {
+	background: url("../audiojs/player-graphics-e.gif") no-repeat scroll 9px 6px transparent;
+}
+.volset .volupZ {
+	background: url("../audiojs/player-graphics-e.gif") no-repeat scroll -9px -169px transparent;
+}
+.volset .voldnZ {
+	background: url("../audiojs/player-graphics-e.gif") no-repeat scroll -4px -209px transparent;
+}
+.audiojsZ .prevZ {
+	background: url("../audiojs/player-graphics-e.gif") no-repeat scroll -2px -40px transparent;
+}
+.audiojsZ .nextZ {
+	background: url("../audiojs/player-graphics-e.gif") no-repeat scroll -2px -80px transparent;
+}
+.audiojsZ .loadingZ {
+	background: url("../audiojs/ajax-loader.gif") no-repeat scroll 18px 18px transparent;
+}
+.audiojsZ .errorZ {
+	background: url("../audiojs/player-graphics-e.gif") no-repeat scroll 7px -235px transparent;
+}
+.audiojsZ .pauseZ {
+	background: url("../audiojs/player-graphics-e.gif") no-repeat scroll 6px -113px transparent;
+}
+.playingZ .playZ, .playingZ .loadingZ, .playingZ .errorZ, .loadingZ .playZ, .loadingZ .pauseZ, .loadingZ .errorZ, .errorZ .timeZ, .errorZ .playZ, .errorZ .pauseZ, .errorZ .scrubberZ, .errorZ .loadingZ, #infopanel, #control {
+	display: none;
+}
+.playingZ .pauseZ, .loadingZ .loadingZ, .errorZ .errorZ, .errorZ .error-messageZ, .volset .volupZ, .volset .voldnZ, .audiojsZ .prevZ, .audiojsZ .nextZ {
+	display: block;
+}
+.errorZ .play-pauseZ p {
+	cursor: auto;
+}

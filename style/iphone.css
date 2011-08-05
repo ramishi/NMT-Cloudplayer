@@ -1,0 +1,44 @@
+#breadcrumb {
+	display:none;
+}
+.rpanel {
+	width: 100%;
+}
+#backbtn, #headerh1 {
+	display:block;
+}
+#infopanel {
+	width: 100%;
+}
+.audiojsZ {
+	text-align: center;
+	border-top: 1px solid #C2C2C2;
+	padding-top: 10px;
+}
+.volset .volup, .volset .voldn {
+	padding: 2px;
+}
+.volset {
+	float: left;
+	margin-left:2px;
+	width: 120px;
+}
+.volset .vbar {
+	width: 48px;
+}
+.audiojsZ .scrubberZ {
+	width: 60%;
+	margin: 13px 10px 10px;
+	clear: left;
+}
+.audiojsZ .error-messageZ {
+	clear: left;
+	width: 90%;
+}
+.audiojsZ .timeZ {
+	line-height: 42px;
+}
+span.albumCover {
+	margin-left: auto;
+	margin-right: auto;
+}

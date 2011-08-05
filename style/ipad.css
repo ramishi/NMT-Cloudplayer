@@ -1,0 +1,34 @@
+#breadcrumb {
+	line-height:45px;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+}
+#breadcrumb span {
+	padding-left:10px;
+	display:inline-block;
+	margin-right: -25px;
+}
+#breadcrumb a {
+	display:inline-block;
+	background-image:url('../images/bc_separator.png');
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-right: 20px;
+	text-decoration: none;
+	outline:none;
+	color:#fff;
+	margin-right: 10px;
+}
+#breadcrumb a:hover {
+}
+.rpanel {
+	width: 66% !important;
+}
+#backbtn, #headerh1 {
+	display:none;
+}
+#infopanel {
+	float: left;
+	width: 30%;
+}
