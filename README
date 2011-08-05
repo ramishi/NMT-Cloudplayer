@@ -1,1 +1,47 @@
-Hello World!
+Music [beta] NMT Cloudplayer - php html5 music streamer
+
+Hi everyone, I'm a user of nmt for long time but this is my first time developing for nmt. I want to share my backyard project, maybe some of you will find it useful. To be honest I'm a designer not a php developer and I have very limited knowledge of php, so they code are very messy. please feel free to improve the code.
+
+Inspired by iPhone File Browser for C200 by Strich9, I created this little webapp which you can stream your music library from your NMT to your browser, mobile or tablet anytime, anywhere. Thanks to html5 and audioJS framework for payback possible. JQuery Mobile used for mobile device optimization.
+
+
+
+Features
+
+    stream music files Stored in NMT hdd to browser
+    support modern browser, smartphone & tablet
+    skin auto adjust according to screen size
+    Cover art & text review support
+    auto get artist, album name from folder name (Artist - Album)
+
+
+Requirement:
+
+    NMT with lighttpd/PHP installed (can be easily ported to any web server or NAS)
+    Create symlink for lighttpd or follow the guide by Strich9
+    html5 browser for audio playback (old browser should work with Flash fallback but not tested)
+
+
+Installation:
+
+    Download:
+    Unzip to \share\Apps\AppInit\websites
+    by default it look for music file from "/share/Music", change the path in index.php if your path is different.
+    Browse to http://[yourC200_IP]:9999/files.php
+    Enjoy
+
+
+
+To-Do
+
+    create CSI package
+    new skins
+    add "Play via NMT" feature, (Just got the SDK, need time to study how can control via the Davidbox API)
+    add playlist support (no idea, if anyone got idea how to do)
+    get meta data from mp3 id3
+    any suggestions?
+
+
+
+* Tested on FF5, iphone, ipad only. let me know if you got any errors on other browser.
+* Php experts please helps to optimize the code! 
