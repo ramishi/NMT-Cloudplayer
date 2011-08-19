@@ -67,6 +67,7 @@ function showContent($path){
            {
 			  // echo "hidden<br>";
 			   } else {
+				
 				$fName =  htmlspecialchars($file, ENT_QUOTES);
 				$file = $path."/".$file;			 
 				$file =  htmlspecialchars($file, ENT_QUOTES);
@@ -75,17 +76,17 @@ function showContent($path){
 	
                if(is_file($file)) {
 				    
-                   echo "<li class='music' data-icon='false'><h3><a class='musicfile' href='#' data-src='".$_ENV['domain'].$fileurl."'>".$fName."</a></h3>"
-                       ."<p class='size ui-li-aside'> ".format_size(filesize($file))."</p></li>";
+                   echo "<li class='music' data-icon='false'><a class='musicfile' href='#' data-src='".$_ENV['domain'].$fileurl."'><h3>".$fName."</h3>"
+                       ."<p class='size ui-li-aside'> ".format_size(filesize($file))."</p></a></li>";
                } elseif (is_dir($file)) {
-                   echo "<li class='folder'>";
+                   echo "<li class='folder'><a href='".$_SERVER['SCRIPT_NAME']."?path=".$file."'>";
 				   if (file_exists($file."/".$_ENV['coverart'])) {					   
 						$folderart = $_ENV['domain'].$fileurl."/".$_ENV['coverart'];
 						echo "<img src='$folderart'>";
 					} else { 
 						echo "<img src='images/jewelcase_empty.png'>";
 					};
-					echo "<h3><a href='".$_SERVER['SCRIPT_NAME']."?path=".$file."'>$fName</a></h3></li>";
+					echo "<h3>$fName</h3></a></li>";
                }
            }
        }
@@ -95,7 +96,15 @@ function showContent($path){
 
 }
 
+function workaround_missing_functions() {
+    if (!function_exists('mb_substr')) {
+      function mb_substr($str, $start, $length = 1024, $encoding = false) {
+        return substr($str, $start, $length);      
+      }
+   }
 
+}
+workaround_missing_functions();
 
 
 ?>
@@ -103,8 +112,8 @@ function showContent($path){
 <!DOCTYPE HTML>
 <html>
 <head>
-<title></title>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+<title>NMT Cloudplayer</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
 <link href="style/style.css" rel="stylesheet" type="text/css">
 <link href="style/audiojs.css" rel="stylesheet" type="text/css">
 <!--change style by device-->
@@ -113,13 +122,13 @@ function showContent($path){
 <link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" href="style/ipad.css">
 <link rel="stylesheet" media="all and (min-device-width: 1025px)" href="style/ipad.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js" type="text/javascript"></script>
 <script src="audiojs/audio.min.js" type="text/javascript"></script>
 <script src="audiojs/player.js" type="text/javascript"></script>
 <script>
  $(document).ready(function() {
   // disable ajax nav
-  $.mobile.ajaxLinksEnabled = false;
+  $.mobile.ajaxEnabled = false;
  });
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -226,7 +235,7 @@ $actpath = $_ENV['basepath'];
     </div>
   </div>
   <div data-role="footer">
-    <h4>NMT Cloudplayer  -  Version: 0.3 beta</h4>
+    <h4>NMT Cloudplayer  -  Version: 0.4 beta</h4>
   </div>
 </div>
 </body>

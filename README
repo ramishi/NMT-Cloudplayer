@@ -4,7 +4,11 @@ Hi everyone, I'm a user of nmt for long time but this is my first time developin
 
 Inspired by iPhone File Browser for C200 by Strich9, I created this little webapp which you can stream your music library from your NMT to your browser, mobile or tablet anytime, anywhere. Thanks to html5 and audioJS framework for payback possible. JQuery Mobile used for mobile device optimization.
 
-
+Change log:
+0.4 update to latest jquery mobile release
+    added NMT 1xx missing function (Thanks gkreidl)
+    minor fixes
+0.3 initial release
 
 Features
 
