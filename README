@@ -31,7 +31,7 @@ Installation:
     Download:
     Unzip to \share\Apps\AppInit\websites
     by default it look for music file from "/share/Music", change the path in index.php if your path is different.
-    Browse to http://[yourC200_IP]:9999/files.php
+    Browse to http://[yourC200_IP]:9999/index.php
     Enjoy
 
 
